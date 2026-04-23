@@ -1,23 +1,23 @@
-.badge {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: bold;
-  text-transform: capitalize;
+.filter-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-.badge-high {
-  background: #7f1d1d;
-  color: #fecaca;
+.filter-btn {
+  background: #334155;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.badge-medium {
-  background: #78350f;
-  color: #fde68a;
+.filter-btn:hover {
+  background: #475569;
 }
 
-.badge-low {
-  background: #14532d;
-  color: #bbf7d0;
+.filter-btn.active {
+  background: #2563eb;
 }

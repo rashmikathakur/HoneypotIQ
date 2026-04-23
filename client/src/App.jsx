@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import "./index.css";
 import StatCard from "./components/StatCard";
 import AttackTable from "./components/AttackTable";
@@ -14,6 +14,7 @@ function App() {
   });
 
   const [attacks, setAttacks] = useState([]);
+  const [severityFilter, setSeverityFilter] = useState("all");
 
   const fetchData = () => {
     fetch("http://localhost:5000/api/stats")
@@ -48,6 +49,11 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
+  const filteredAttacks = useMemo(() => {
+    if (severityFilter === "all") return attacks;
+    return attacks.filter((attack) => attack.severity === severityFilter);
+  }, [attacks, severityFilter]);
+
   return (
     <div className="app">
       <h1>HoneypotIQ</h1>
@@ -70,7 +76,41 @@ function App() {
 
       <TrapSimulator onAttackLogged={fetchData} />
       <AttackChart stats={stats} />
-      <AttackTable attacks={attacks} />
+
+      <div className="section">
+        <h2>Filter Attacks</h2>
+        <div className="filter-row">
+          <button
+            className={severityFilter === "all" ? "filter-btn active" : "filter-btn"}
+            onClick={() => setSeverityFilter("all")}
+          >
+            All
+          </button>
+
+          <button
+            className={severityFilter === "high" ? "filter-btn active" : "filter-btn"}
+            onClick={() => setSeverityFilter("high")}
+          >
+            High
+          </button>
+
+          <button
+            className={severityFilter === "medium" ? "filter-btn active" : "filter-btn"}
+            onClick={() => setSeverityFilter("medium")}
+          >
+            Medium
+          </button>
+
+          <button
+            className={severityFilter === "low" ? "filter-btn active" : "filter-btn"}
+            onClick={() => setSeverityFilter("low")}
+          >
+            Low
+          </button>
+        </div>
+      </div>
+
+      <AttackTable attacks={filteredAttacks} />
     </div>
   );
 }
