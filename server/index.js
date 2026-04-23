@@ -118,3 +118,7 @@ app.get("/trap/env", (req, res) => {
 app.listen(PORT, () => {
   console.log(`🪤 HoneypotIQ running at http://localhost:${PORT}`);
 });
+app.delete("/api/attacks", (req, res) => {
+  db.prepare("DELETE FROM attacks").run();
+  res.json({ message: "All attack logs cleared" });
+});
