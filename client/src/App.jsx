@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import "./index.css";
-import Header from "./components/Header";
+import Header from "./components/HeaderComponents";
 import StatCard from "./components/StatCard";
 import AttackTable from "./components/AttackTable";
 import AttackChart from "./components/AttackChart";
