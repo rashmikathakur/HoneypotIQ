@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1776923389937,
+    "ip": "::1",
+    "route": "/trap/admin",
+    "attackType": "admin probe",
+    "severity": "medium",
+    "time": "2026-04-23T05:49:49.937Z"
+  },
+  {
+    "id": 1776923389645,
+    "ip": "::1",
+    "route": "/trap/admin",
+    "attackType": "admin probe",
+    "severity": "medium",
+    "time": "2026-04-23T05:49:49.645Z"
+  },
+  {
+    "id": 1776923334712,
+    "ip": "::1",
+    "route": "/trap/admin",
+    "attackType": "admin probe",
+    "severity": "medium",
+    "time": "2026-04-23T05:48:54.712Z"
+  },
+  {
+    "id": 1776923334015,
+    "ip": "::1",
+    "route": "/trap/admin",
+    "attackType": "admin probe",
+    "severity": "medium",
+    "time": "2026-04-23T05:48:54.015Z"
+  },
+  {
+    "id": 1776923298429,
+    "ip": "::1",
+    "route": "/trap/admin",
+    "attackType": "admin probe",
+    "severity": "medium",
+    "time": "2026-04-23T05:48:18.429Z"
+  }
+]
