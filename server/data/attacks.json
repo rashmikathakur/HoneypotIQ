@@ -1,5 +1,14 @@
 [
   {
+    "id": 1776922087726,
+    "ip": "::1",
+    "route": "/trap/admin",
+    "attackType": "admin probe",
+    "severity": "medium",
+    "payload": null,
+    "time": "2026-04-23T05:28:07.726Z"
+  },
+  {
     "id": 1776921817142,
     "ip": "::1",
     "route": "/trap/login",
