@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import "./index.css";
+import Header from "./components/Header";
 import StatCard from "./components/StatCard";
 import AttackTable from "./components/AttackTable";
 import AttackChart from "./components/AttackChart";
@@ -56,8 +57,7 @@ function App() {
 
   return (
     <div className="app">
-      <h1>HoneypotIQ</h1>
-      <p>Fake Server Trap & Attack Visualizer</p>
+      <Header />
 
       <div className="button-row">
         <button className="refresh-btn" onClick={fetchData}>
