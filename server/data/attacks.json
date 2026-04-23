@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1776921817142,
+    "ip": "::1",
+    "route": "/trap/login",
+    "attackType": "brute force attempt",
+    "severity": "high",
+    "payload": {
+      "username": "admin",
+      "password": "1234"
+    },
+    "time": "2026-04-23T05:23:37.142Z"
+  },
+  {
+    "id": 1776921798311,
+    "ip": "::1",
+    "route": "/trap/admin",
+    "attackType": "admin probe",
+    "severity": "medium",
+    "payload": null,
+    "time": "2026-04-23T05:23:18.311Z"
+  }
+]
