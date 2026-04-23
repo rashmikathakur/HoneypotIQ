@@ -3,6 +3,7 @@ import "./index.css";
 import StatCard from "./components/StatCard";
 import AttackTable from "./components/AttackTable";
 import AttackChart from "./components/AttackChart";
+import TrapSimulator from "./components/TrapSimulator";
 
 function App() {
   const [stats, setStats] = useState({
@@ -61,6 +62,7 @@ function App() {
         <StatCard title="High Severity" value={stats.highSeverity} />
       </div>
 
+      <TrapSimulator onAttackLogged={fetchData} />
       <AttackChart stats={stats} />
       <AttackTable attacks={attacks} />
     </div>
