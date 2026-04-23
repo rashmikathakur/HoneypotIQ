@@ -3,15 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+<<<<<<< HEAD
  "scripts": {
   "start": "node index.js",
   "dev": "nodemon index.js"
 },
+=======
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+>>>>>>> frontend-dashboard
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "better-sqlite3": "^12.9.0",
+>>>>>>> frontend-dashboard
     "cors": "^2.8.6",
     "express": "^5.2.1"
   },
