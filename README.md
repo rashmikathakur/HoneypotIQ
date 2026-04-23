@@ -45,5 +45,7 @@ This project demonstrates how honeypots can be used to monitor and analyze malic
 
 ## Commit it:
 git add README.md
+
 git commit -m "Add project README"
+
 git push
