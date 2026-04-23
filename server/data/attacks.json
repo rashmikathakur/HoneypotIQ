@@ -1,5 +1,66 @@
 [
   {
+    "id": 1776924500521,
+    "ip": "::1",
+    "route": "/trap/env",
+    "attackType": ".env scan",
+    "severity": "high",
+    "payload": null,
+    "time": "2026-04-23T06:08:20.521Z"
+  },
+  {
+    "id": 1776924474356,
+    "ip": "::1",
+    "route": "/trap/database",
+    "attackType": "database probe",
+    "severity": "high",
+    "payload": null,
+    "time": "2026-04-23T06:07:54.356Z"
+  },
+  {
+    "id": 1776924466342,
+    "ip": "::1",
+    "route": "/trap/config",
+    "attackType": "config scan",
+    "severity": "medium",
+    "payload": null,
+    "time": "2026-04-23T06:07:46.342Z"
+  },
+  {
+    "id": 1776924457744,
+    "ip": "::1",
+    "route": "/trap/admin",
+    "attackType": "admin probe",
+    "severity": "medium",
+    "payload": null,
+    "time": "2026-04-23T06:07:37.744Z"
+  },
+  {
+    "id": 1776924457443,
+    "ip": "::1",
+    "route": "/trap/admin",
+    "attackType": "admin probe",
+    "severity": "medium",
+    "payload": null,
+    "time": "2026-04-23T06:07:37.443Z"
+  },
+  {
+    "id": 1776923974482,
+    "ip": "::1",
+    "route": "/trap/admin",
+    "attackType": "admin probe",
+    "severity": "medium",
+    "time": "2026-04-23T05:59:34.482Z"
+  },
+  {
+    "id": 1776923973892,
+    "ip": "::1",
+    "route": "/trap/admin",
+    "attackType": "admin probe",
+    "severity": "medium",
+    "time": "2026-04-23T05:59:33.892Z"
+  },
+  {
     "id": 1776923389937,
     "ip": "::1",
     "route": "/trap/admin",
