@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./index.css";
+import StatCard from "./components/StatCard";
+import AttackTable from "./components/AttackTable";
 
 function App() {
   const [stats, setStats] = useState({
@@ -28,51 +30,12 @@ function App() {
       <p>Fake Server Trap & Attack Visualizer</p>
 
       <div className="cards">
-        <div className="card">
-          <h3>Total Attacks</h3>
-          <p>{stats.totalAttacks}</p>
-        </div>
-
-        <div className="card">
-          <h3>Unique IPs</h3>
-          <p>{stats.uniqueIPs}</p>
-        </div>
-
-        <div className="card">
-          <h3>High Severity</h3>
-          <p>{stats.highSeverity}</p>
-        </div>
+        <StatCard title="Total Attacks" value={stats.totalAttacks} />
+        <StatCard title="Unique IPs" value={stats.uniqueIPs} />
+        <StatCard title="High Severity" value={stats.highSeverity} />
       </div>
 
-      <div className="section">
-        <h2>Recent Attacks</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>IP</th>
-              <th>Route</th>
-              <th>Attack Type</th>
-              <th>Time</th>
-            </tr>
-          </thead>
-          <tbody>
-            {attacks.length > 0 ? (
-              attacks.map((attack) => (
-                <tr key={attack.id}>
-                  <td>{attack.ip}</td>
-                  <td>{attack.route}</td>
-                  <td>{attack.attackType}</td>
-                  <td>{new Date(attack.time).toLocaleString()}</td>
-                </tr>
-              ))
-            ) : (
-              <tr>
-                <td colSpan="4">No attack data yet</td>
-              </tr>
-            )}
-          </tbody>
-        </table>
-      </div>
+      <AttackTable attacks={attacks} />
     </div>
   );
 }
