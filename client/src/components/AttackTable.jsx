@@ -1,4 +1,10 @@
 function AttackTable({ attacks }) {
+  const getSeverityClass = (severity) => {
+    if (severity === "high") return "badge badge-high";
+    if (severity === "medium") return "badge badge-medium";
+    return "badge badge-low";
+  };
+
   return (
     <div className="section">
       <h2>Recent Attacks</h2>
@@ -8,6 +14,7 @@ function AttackTable({ attacks }) {
             <th>IP</th>
             <th>Route</th>
             <th>Attack Type</th>
+            <th>Severity</th>
             <th>Time</th>
           </tr>
         </thead>
@@ -18,12 +25,17 @@ function AttackTable({ attacks }) {
                 <td>{attack.ip}</td>
                 <td>{attack.route}</td>
                 <td>{attack.attackType}</td>
+                <td>
+                  <span className={getSeverityClass(attack.severity)}>
+                    {attack.severity}
+                  </span>
+                </td>
                 <td>{new Date(attack.time).toLocaleString()}</td>
               </tr>
             ))
           ) : (
             <tr>
-              <td colSpan="4">No attack data yet</td>
+              <td colSpan="5">No attack data yet</td>
             </tr>
           )}
         </tbody>
