@@ -43,7 +43,7 @@ User → Trap Endpoints → Express Backend → SQLite Database → React Dashbo
 
 This project demonstrates how honeypots can be used to monitor and analyze malicious activity in a controlled environment.
 
-##Commit it:
+## Commit it:
 git add README.md
 git commit -m "Add project README"
 git push
