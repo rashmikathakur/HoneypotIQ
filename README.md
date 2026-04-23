@@ -23,3 +23,27 @@ HoneypotIQ is a full-stack cybersecurity project that simulates fake vulnerable 
 ## ▶️ How to Run
 
 ### Backend
+cd server
+npm install
+npm run dev
+
+### Frontend
+cd client
+npm install
+npm run dev
+
+
+Then open: http://localhost:5173
+
+## 📊 Architecture
+
+User → Trap Endpoints → Express Backend → SQLite Database → React Dashboard
+
+## 🎯 Purpose
+
+This project demonstrates how honeypots can be used to monitor and analyze malicious activity in a controlled environment.
+
+##Commit it:
+git add README.md
+git commit -m "Add project README"
+git push
