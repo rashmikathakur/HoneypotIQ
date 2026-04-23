@@ -32,6 +32,7 @@ h1 {
   padding: 20px;
   border-radius: 10px;
   overflow-x: auto;
+  margin-top: 20px;
 }
 
 table {

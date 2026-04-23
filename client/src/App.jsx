@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./index.css";
 import StatCard from "./components/StatCard";
 import AttackTable from "./components/AttackTable";
+import AttackChart from "./components/AttackChart";
 
 function App() {
   const [stats, setStats] = useState({
@@ -35,6 +36,7 @@ function App() {
         <StatCard title="High Severity" value={stats.highSeverity} />
       </div>
 
+      <AttackChart stats={stats} />
       <AttackTable attacks={attacks} />
     </div>
   );
