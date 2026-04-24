@@ -28,12 +28,16 @@ https://honeypotiq.netlify.app/
 
 ### Backend
 cd server
+
 npm install
+
 npm run dev
 
 ### Frontend
 cd client
+
 npm install
+
 npm run dev
 
 
