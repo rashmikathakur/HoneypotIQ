@@ -43,6 +43,24 @@ npm run dev
 
 Then open: http://localhost:5173
 
+### Sample Attacks
+http://localhost:5000/trap/admin
+
+http://localhost:5000/trap/config
+
+http://localhost:5000/trap/database
+
+http://localhost:5000/trap/env
+
+### RETURNS ALL ATTACK LOGS
+http://localhost:5000/api/attacks
+
+### RETURNS ANALYTICS
+http://localhost:5000/api/stats
+
+#### CLEAR LOGS
+DELETE http://localhost:5000/api/attacks
+
 ## 📊 Architecture
 
 User → Trap Endpoints → Express Backend → SQLite Database → React Dashboard
