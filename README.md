@@ -58,9 +58,6 @@ http://localhost:5000/api/attacks
 ### RETURNS ANALYTICS
 http://localhost:5000/api/stats
 
-#### CLEAR LOGS
-DELETE http://localhost:5000/api/attacks
-
 ### Simulate Login 
 Trap Simulator 
 
