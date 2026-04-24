@@ -42,10 +42,11 @@ body {
   font-size: 42px;
   letter-spacing: 1px;
   background: linear-gradient(90deg, #ff7bd5, #c084fc, #93c5fd);
+  background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
 }
-
 .header-subtitle {
   margin: 4px 0 0;
   color: #f8c7ef;
