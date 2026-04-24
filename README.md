@@ -61,6 +61,13 @@ http://localhost:5000/api/stats
 #### CLEAR LOGS
 DELETE http://localhost:5000/api/attacks
 
+### Simulate Login 
+Trap Simulator 
+
+Username: Admin1234
+
+Password: 1234 
+
 ## 📊 Architecture
 
 User → Trap Endpoints → Express Backend → SQLite Database → React Dashboard
