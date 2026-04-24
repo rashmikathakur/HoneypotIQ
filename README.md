@@ -3,7 +3,7 @@
 HoneypotIQ is a full-stack cybersecurity project that simulates fake vulnerable server endpoints (honeypots) to capture and analyze malicious activity.
 
 
-##Live Demo 
+## Live Demo 
 https://honeypotiq.netlify.app/
 
 ## 🚀 Features
